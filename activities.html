@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Sankalpa</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/activity.css" rel="stylesheet">
+
+  <style>
+    /* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+header {
+    background: url('header-bg.jpg') no-repeat center center/cover;
+    color: #131111;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.header-content h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+.header-content p {
+    font-size: 1.5rem;
+}
+.row {
+    display: flex;
+    justify-content: space-between; /* Adjust spacing between items */
+    gap: 10px; /* Adjust gap between images */
+}
+.image-container {
+    position: relative;
+    width: 100%;
+    max-width: 600px; /* Adjust as needed */
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    margin: 2rem;
+    padding: 2rem;
+    flex-basis: 30%;
+    text-align: left;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    text-align: center;
+}
+
+
+section {
+    padding: 3rem 1rem;
+    text-align: center;
+}
+
+.success-stories h2,
+.volunteer-opportunities h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.stories-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.story-card {
+    background: #f4f4f4;
+    border-radius: 10px;
+    margin: 1rem;
+    padding: 1rem;
+    flex-basis: 30%;
+    text-align: left;
+}
+
+.story-card img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.story-card h3 {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+
+.story-card p {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.contributors-section {
+    padding: 50px;
+    text-align: center;
+    background-color: #fff;
+    max-width: 1200px;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    margin-bottom: 40px;
+    font-size: 2.5em;
+    color: #333;
+}
+
+.contributors-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.contributor {
+    background-color: #e9e9e9;
+    border-radius: 20px;
+    overflow: hidden;
+    max-width: 250px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.contributor img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.contributor h3 {
+    margin: 15px 0;
+    font-size: 1.2em;
+    color: #555;
+}
+
+.contributor:hover {
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .contributors-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+footer {
+    background: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+.footer-content p {
+    margin: 0.5rem 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .header-content p {
+        font-size: 1.2rem;
+    }
+
+    .stories-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .story-card {
+        flex-basis: 90%;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center">
+    <div class="container d-flex align-items-center">
+
+      <div class="logo me-auto">
+        <h1><a href="index.html"> <img src="./assets/img/CAFLOGO1.jpeg">  
+          
+            </a></h1>
+          </div>
+
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a class="nav-link scrollto " href="index.html">HOME</a></li>
+          <li><a class="nav-link scrollto" href="about.html">ABOUT US</a></li>
+          
+          <li><a class="nav-link scrollto active" href="activities.html">ACTIVTIES</a></li>
+          <li><a class="nav-link scrollto " href="donation.html">DONATE</a></li>
+          <li><a class="nav-link scrollto" href="contact.html">CONTACT US</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+      <!--
+      <div class="header-social-links d-flex align-items-center">
+        <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
+      </div>
+      -->
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= 
+  <div id="hero">
+   
+  </div>-->
+
+  <main id="main">
+  <!-- Header Section -->
+  <header class="header">
+    <div class="header-content">
+        <BR><br><br><br><br><br>
+        <h1>Our Activities</h1>
+<p>Making a difference, one project at a time.</p>
+    </div>
+</header>
+
+<div class="row">
+    <div class="image-container">
+        <img src="./assets/img/IMG_4772.jpeg" height="50px" alt="Image 1">
+        <div class="text-overlay">The Heartbreaking Reality of Child Education in Africa
+
+        </div>
+    </div>
+    <div class="image-container">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4065wCMjnW9HAFIV3nWGhDyQ7u5mahJkYnU0724323F0qlBAlEhSJuQM&s=10" height="50px" alt="Image 2">
+        <div class="text-overlay">Save a child life</div>
+    </div>
+</div>
+<!-- Project Success Stories Section -->
+<section class="success-stories">
+    <h2> CAF Success Stories</h2>
+    <div class="stories-container">
+        <div class="story-card">
+            <img src="https://www.preventionweb.net/sites/default/files/styles/landscape_16_9/public/2022-08/Child%20drinks%20water%20Mali%2C%20Kenya.jpg?h=0a165003&itok=eDGAc7z1" alt="Project 1">
+            <h3>Project 1: Clean Water Initiative</h3>
+            <p>This project provided clean drinking water to over 10,000 people in rural areas.</p>
+        </div>
+        <div class="story-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQi1J2lHY8HuapjvhnCQlow39ajp_dmhJ1k3g&s" alt="Project 2">
+            <h3>Project 2: Education for All</h3>
+            <p>Our education program reached 5,000 children, improving literacy rates by 40%.</p>
+        </div>
+        <!-- Add more story-cards as needed -->
+    </div>
+</section>
+
+<!-- Volunteer Opportunities Section--> 
+<section class="volunteer-opportunities">
+    <h2>CAF Top Contributor</h2>
+    <p>Join us in making a difference. CLICK ON JOIN to become a contributor 
+    </p>
+    <div class="container">
+        <!-- Button to Show Form -->
+        <a href="#formContainer" class="show-form-btn"><strong style="font-size: xx-large;">Become a contributor</strong></a>
+
+        <!-- Form Container (Hidden by Default) -->
+        <div id="formContainer" class="form-container">
+            <a href="login.html" class="close-form-btn"><button style="background-color: red; font-style: italic; font-size: larger; border-radius: 10px;">JOIN NOW</button></a> <!-- Close Button -->
+            
+        </div>
+    </div>
+
+    <div class="contributors-section">
+     <!--    <h1>Top Contributors</h1>-->
+        <div class="contributors-grid">
+            <div class="contributor">
+                <img src="./assets/img/IMG_4693.jpeg" alt="Contributor 1">
+                <h3>Prince Onyekwum Victor</h3>
+                <p style="font-style: italic;"> CEO Sir Vic Authors<br> Ouagadougou Burkina Faso</p>
+            </div><br><br>
+            <div class="contributor">
+                <img src="./assets/img/IMG_4697.jpeg" alt="Contributor 2">
+                <h3>Chief SIR Ray Nonso Aralu</h3>
+                <p style="font-style: italic;"> CEO Anoray International Service</p>
+
+            </div><br><br>
+            <div class="contributor">
+                <img src="./assets/img/IMG_4704.jpeg" alt="Contributor 3">
+                <h3>Hon Richard Humphrey 
+               </h3>
+               <p> (OZIGBONDU  1)</p>
+              <!--    <p style="font-style: italic;"> CEO Sir<br> Ouagadougou Burkina Faso</p>-->
+
+            </div><br><br>
+            <div class="contributor">
+                <img src="./assets/img/IMG_4703.jpeg" alt="Contributor 4">
+                <h3>Mr Chukwu Joshua </h3>
+                <p style="font-style: italic;"> CEO Jose Auto  <br> Ouagadougou Burkina Faso</p>
+
+            </div><br><br>
+
+            <div class="contributor">
+                <img src="./assets/img/IMG_4705.jpeg" alt="Contributor 4">
+                <h3>Mr & Mrs Nwanja Onyebuchi </h3>
+                <p style="font-style: italic;"> CEO Ets O.N.G. Auto <br> Ouagadougou Burkina Faso</p>
+
+            </div><br><br>
+
+            <div class="contributor">
+                <img src="./assets/img/IMG_4695.jpeg" alt="Contributor 4">
+                <h3>Mr Umar Zongo (USA)</h3>
+            </div><br><br>
+
+            <!-- Add more contributors as needed -->
+        </div>
+    </div>
+    <!-- Add content for volunteer opportunities here -->
+</section>
+
+
+
+  </main><!-- End #main -->
+
+ 
+
+ <!-- ======= Footer ======= -->
+ <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-2 footer-links text-center" id="pages">
+            <p>Mobile and WhatsApp<br> Number</p>
+            +234 8068737987<br> +22654797775<br>><br><br>
+            <h5>ADDRESS</h5>
+            32, Kosofe Road,<br>
+            Dolphine Estate,<br>
+            Ikoyi Lagos State, Nigeria<br>
+
+            <br><br>
+            <h5> POSTER CODE</h5>
+            101222 <br><br>
+            <h5>EMAIL</h5>
+            <ul>
+            
+              <li>
+                <Secondary></Secondary> <a href="mailto: collinsaralufoundation@gmail.com
+                "> collinsaralufoundation@gmail.com
+            </a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-2 footer-links"></div>
+          
+          <div class="col-lg-3 col-md-5 footer-links" id="pages">
+                    
+            <ul>
+              <li><h3>Quick Links</h3></li>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="#">Vision & Mission</a></li>
+              <li><a href="activities.html">Activities</a></li>
+              <li><a href="#">Be a Member</a></li>
+              <li><a href="donation.html">Donate</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+          
+          </div>
+          <div class="copyright">
+            &copy; Copyright <strong><span>CAF</span></strong>.2024 All Rights Reserved
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+
+    
+  </footer><!-- End Footer -->
+
+
+
+           
+          <!--
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-md-6 footer-newsletter">
+            <h4>Our Newsletter</h4>
+            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+            <form action="" method="post">
+              <input type="email" name="email"><input type="submit" value="Subscribe">
+            </form>
+
+          </div>-->
+
+        </div>
+      </div>
+    </div>
+
+    
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  
+  
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+  <script>
+    document.getElementById("login-form").addEventListener("submit", function(event) {
+      event.preventDefault();
+  
+      const email = document.getElementById("email").value;
+      const password = document.getElementById("password").value;
+  
+      // Post request for user authentication
+      fetch('/api/login', {
+          method: 'POST',
+          headers: {
+              'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({ email, password })
+      })
+      .then(response => response.json())
+      .then(data => {
+          if (data.success) {
+              alert("Login successful");
+              window.location.href = "index.html";
+          } else {
+              alert("Login failed");
+          }
+      });
+  });
+  
+  document.getElementById("register-form").addEventListener("submit", function(event) {
+      event.preventDefault();
+  
+      const username = document.getElementById("username").value;
+      const email = document.getElementById("email").value;
+      const password = document.getElementById("password").value;
+  
+      // Post request for user registration
+      fetch('/api/register', {
+          method: 'POST',
+          headers: {
+              'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({ username, email, password })
+      })
+      .then(response => response.json())
+      .then(data => {
+          if (data.success) {
+              alert("Registration successful");
+              window.location.href = "login.html";
+          } else {
+              alert("Registration failed");
+          }
+      });
+  });
+
+
+
+  </script>
+
+</body>
+
+</html>
